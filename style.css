@@ -58,7 +58,7 @@ img {
 }
 
 p {
-	line-height: 1.3;
+	line-height: 1.5;
 }
 
 /* <---- NAV ----> */
@@ -195,9 +195,101 @@ h5 {
 	text-align: center;
 }
 
+div.experiment-description {
+	margin: 0 20%;
+	width: 60%;
+	text-align: center;
+	padding: 10px;
+}
+
+.experiment-description h4 {
+	font-size: 1.2rem;
+	margin: 1rem;
+	text-transform: uppercase;
+	font-family: 'Average', serif;
+}
 
 
+/* <---- ABOUT ----> */
 
+section.about {
+	padding-top: 1px;
+}
+
+.headshot {
+	display: flex;
+	justify-content: space-between;
+}
+
+.headshot-image-container {
+	width: 50%;
+}
+
+.about-text-container {
+	width: 60%;
+	margin: 3rem 20%;
+}
+
+.about-text-container h4 {
+	font-size: 1.5rem;
+	margin: 2rem 0;
+	text-transform: uppercase;
+	font-family: 'Average', serif;
+	text-align: center;
+}
+
+.about-text-container p {
+	font-size: 1.2rem;
+	line-height: 1.7;
+	text-align: center;
+}
+
+.bio {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.headshot {
+	margin: 5rem 0;
+}
+
+.katy-headshot {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.katy-bio {
+	text-align: right;
+}
+
+.bio span.italic {
+	font-style: italic;
+}
+
+.bio span.bold {
+	font-weight: 600;
+	font-family: 'Average', serif;
+}
+
+.bio p {
+	font-size: 0.9rem;
+}
+
+.bio h3, .bio h5 {
+	color: black;
+	text-align: left;
+}
+
+.katy-bio, .katy-bio h3, .katy-bio h5 {
+	text-align: right;
+}
+
+.bio h5 {
+	font-size: 1.5rem;
+	margin: 0;
+}
 
 
 
