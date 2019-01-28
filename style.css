@@ -323,7 +323,7 @@ section.about {
 footer ul {
 	list-style: none;
 	width: 30%;
-	margin: 2rem 35%;
+	margin: 5rem 35%;
 	padding: 0;
 	display: flex;
 	justify-content: space-around;
@@ -340,7 +340,6 @@ footer li {
 	text-align: center;
 	padding: 10px;
 	font-family: 'IM Fell DW Pica SC', serif;
-	text-transform: uppercase;	
 }
 
 .copyright p {
@@ -360,6 +359,150 @@ input {
 	text-align: center;
 }
 
+input[type="submit"] {
+	background-color: black;
+	color: white;
+}
+
 footer p {
 	text-align: center;
+}
+
+
+/* <---- FOOTER ----> */
+
+@media screen and (max-width: 1300px) {
+	div.experiments:nth-of-type(2) {
+		display: none;
+	}
+
+	div.experiments {
+		width: calc(50% - 10px);
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	div.productions {
+		width: 75%;
+		margin: 2rem 0;
+		text-align: center;
+	}
+	
+	.productions-wrapper {
+		justify-content: center;
+	}
+
+	.about-text-container {
+		width: 75%;
+		margin: 3rem 12.5%; 
+	}
+
+	.headshot {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	.headshot-image-container, .bio {
+		width: 75%;
+	}
+
+	.katy-bio, .katy-bio h3, .katy-bio h5 {
+		text-align: left;
+	}
+
+	h1 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	nav img {
+		width: 100px;
+	}
+
+	nav {
+		height: 75px;
+	}
+
+	nav ul li {
+		font-size: 1rem;
+		padding: 0 2%;
+	}
+
+	section.home {
+		height: calc(60vh - 75px);
+		min-height: 350px;
+		margin-top: 75px;
+	}
+
+	div.productions {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	nav ul li {
+		font-size: 0.9rem;
+		padding: 0;
+	}
+
+	nav ul {
+		width: 100%;
+	}
+
+	nav img {
+		width: 75px;
+	}
+
+	h1, h2 {
+		font-size: 2rem;
+	}
+	div.productions {
+		width: 100%;
+	}
+
+	div.experiment-description {
+		width: 100%;
+		margin: 0 0 5rem 0;
+	}
+
+	.experiment-card-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	div.experiments {
+		width: 80%;
+		margin-top: 1rem;
+	}
+
+	.about-text-container {
+		width: 100%;
+		margin: 3rem 0;
+	}
+
+	.bio {
+		width: 100%;
+	}
+
+	.bio h3, .bio h5 {
+		text-align: center;
+	}
+
+	form {
+		width: 90%;
+		margin: 2rem 5%;
+	}
+
+	footer ul {
+		width: 60%;
+		margin: 3rem 20%;
+	}
 }
